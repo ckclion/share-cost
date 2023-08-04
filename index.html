@@ -10,43 +10,42 @@
         <title>ShareCost</title>
     </head>
     <body>
-            <nav class="bg-light border navbar navbar-expand-md navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">Back</a>
+        <nav class="bg-light border navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">ShareCost</a>
+            </div>
+        </nav>
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Paid</th>
+                        <th scope="col">Owe/Receive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr scope="row">
+                        <td><input type="text" autocomplete="off" placeholder="Name"></td>
+                        <td>$<input type="number" class="paid" required value="0" min="0" step="0.01"></td>
+                        <td class="owe">$0.00</td>
+                    </tr>
+                    <tr scope="row">
+                        <td><input type="text" autocomplete="off" placeholder="Name"></td>
+                        <td>$<input type="number" class="paid" required value="0" min="0" step="0.01"></td>
+                        <td class="owe">$0.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="footer" scope="row">
+                        <td></td>
+                        <td>TOTAL:</td>
+                        <td id="total">$0.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button id="add" type="button">Add Pax</button>
+            <button id="remove" type="button">Remove Pax</button>
         </div>
-    </nav>
-    <div class="container">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Paid</th>
-                    <th scope="col">Owe/Receive</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr scope="row">
-                    <td><input type="text" autocomplete="off" placeholder="Name"></td>
-                    <td>$<input type="number" class="paid" required value="0" min="0" step="0.01"></td>
-                    <td class="owe">$0.00</td>
-                </tr>
-                <tr scope="row">
-                    <td><input type="text" autocomplete="off" placeholder="Name"></td>
-                    <td>$<input type="number" class="paid" required value="0" min="0" step="0.01"></td>
-                    <td class="owe">$0.00</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr class="footer" scope="row">
-                    <td></td>
-                    <td>TOTAL:</td>
-                    <td id="total">$0.00</td>
-                </tr>
-            </tfoot>
-        </table>
-        <button id="add" type="button">Add Pax</button>
-        <button id="remove" type="button">Remove Pax</button>
-    </div>
-
     </body>
 </html>
