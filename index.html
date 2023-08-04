@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en>">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="owe.js"></script>
+        <title>ShareCost</title>
+    </head>
+    <body>
+            <nav class="bg-light border navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Back</a>
+        </div>
+    </nav>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Paid</th>
+                    <th scope="col">Owe/Receive</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr scope="row">
+                    <td><input type="text" autocomplete="off" placeholder="Name"></td>
+                    <td>$<input type="number" class="paid" required value="0" min="0" step="0.01"></td>
+                    <td class="owe">$0.00</td>
+                </tr>
+                <tr scope="row">
+                    <td><input type="text" autocomplete="off" placeholder="Name"></td>
+                    <td>$<input type="number" class="paid" required value="0" min="0" step="0.01"></td>
+                    <td class="owe">$0.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="footer" scope="row">
+                    <td></td>
+                    <td>TOTAL:</td>
+                    <td id="total">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <button id="add" type="button">Add Pax</button>
+        <button id="remove" type="button">Remove Pax</button>
+    </div>
+
+    </body>
+</html>
