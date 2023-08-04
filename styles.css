@@ -1,0 +1,36 @@
+.lpax, .error{
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+}
+
+.ipax{
+    position: absolute;
+    display: block;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 150px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.submit{
+    display: block;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 200px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer{
+    font-weight: bold;
+}
